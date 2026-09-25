@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYON</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="rain"></div>
+  <div class="fog fog-one"></div>
+  <div class="fog fog-two"></div>
+
+  <main class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">Z</span><span>ZYON</span></div>
+      <nav>
+        <button class="nav-item active" data-section="library">⌂ <span>Library</span></button>
+        <button class="nav-item" data-section="recent">◷ <span>Recently Played</span></button>
+        <button class="nav-item" data-section="favorites">♡ <span>Favorites</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item">⚙ <span>Settings</span></button>
+        <div class="status"><span></span> Online</div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <header class="topbar">
+        <div class="window-buttons"><i></i><i></i><i></i></div>
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="search" type="search" placeholder="Search your library...">
+        </div>
+        <div id="clock" class="clock"></div>
+      </header>
+
+      <div class="hero">
+        <p class="eyebrow">YOUR SPACE</p>
+        <h1 id="section-title">Welcome to <b>ZYON</b></h1>
+        <p class="subtitle">A quiet place for your library, wrapped in a little atmosphere.</p>
+      </div>
+
+      <section>
+        <div class="section-heading">
+          <h2 id="grid-title">Library</h2>
+          <span id="count"></span>
+        </div>
+        <div id="cards" class="cards"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
